@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: diario_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Salvares$$$****
+      POSTGRES_DB: diariooficial
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: diario_app
+    environment:
+      DATABASE_URL: postgresql+psycopg2://postgres:Salvares$$$****@db:5432/diariooficial
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    restart: always
+
+volumes:
+  db_data:
