@@ -15,12 +15,19 @@ A aplicação realiza o download, extração e armazenamento das informações e
 
 ## 📂 Estrutura do Projeto
 automacao-diario-oficial-natal/
+
 ├── pdfs/
+
 ├── api.py
+
 ├── aitomacao.py
+
 ├── docker-compose.yml # Configuração dos containers
+
 ├── Dockerfile # Imagem da aplicação
+
 ├── requirements.txt # Dependências Python
+
 └── README.md
 
 ## ⚙️ Configuração e Instalação
