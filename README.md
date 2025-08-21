@@ -34,15 +34,24 @@ automacao-diario-oficial-natal/
    ```bash
    git clone https://github.com/seu-usuario/automacao-diario-oficial-natal.git
    cd automacao-diario-oficial-natal
+   
 
 Configure as variáveis de ambiente no arquivo .env:
+
 POSTGRES_USER=usuario
+
 POSTGRES_PASSWORD=senha
+
 POSTGRES_DB=diario
+
 DATABASE_URL=postgresql+psycopg2://usuario:senha@db:5432/diario
 
 Suba os containers:
-docker compose up --build
+```bash
+   docker compose up --build
+````
+
+
 A aplicação Flask ficará disponível em:
 http://localhost:5000
 
