@@ -23,4 +23,4 @@ ENV FLASK_APP=api.py
 ENV FLASK_ENV=development
 ENV PATH="/usr/bin/chromium:/usr/bin/chromedriver:${PATH}"
 
-CMD ["sh", "-c", "python automacao.py && flask run --host=0.0.0.0 --port=5000"]
+CMD ["sh", "-c", "python automacao.py && flask run --host=0.0.0.0 --port=4000"]
