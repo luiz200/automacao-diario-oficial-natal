@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir -p /app/pdfs
 
-ENV DATABASE_URL=postgresql+psycopg2://postgres:Salvares$$$****@db:5432/diariooficial
+ENV DATABASE_URL=postgresql+psycopg2://diariooficial_user:biByHJtxKIsNY3oXVq1z36MVYJRLJwqt@dpg-d2jlbja4d50c7386jnvg-a/diariooficial
 ENV FLASK_APP=api.py
 ENV FLASK_ENV=development
 ENV PATH="/usr/bin/chromium:/usr/bin/chromedriver:${PATH}"
