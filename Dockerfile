@@ -18,9 +18,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir -p /app/pdfs
 
-ENV DATABASE_URL=postgresql+psycopg2://diariooficial_user:biByHJtxKIsNY3oXVq1z36MVYJRLJwqt@dpg-d2jlbja4d50c7386jnvg-a/diariooficial
+ENV DATABASE_URL=postgresql+psycopg2://postgres:Salvares$$$****@db:5432/diariooficial
 ENV FLASK_APP=api.py
 ENV FLASK_ENV=development
 ENV PATH="/usr/bin/chromium:/usr/bin/chromedriver:${PATH}"
 
-CMD ["sh", "-c", "python automacao.py && flask run --host=0.0.0.0 --port=4000"]
+CMD ["sh", "-c", "python automacao.py && flask run --host=0.0.0.0 --port=5000"]

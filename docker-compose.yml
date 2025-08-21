@@ -17,11 +17,11 @@ services:
     build: .
     container_name: diario_app
     environment:
-      DATABASE_URL: postgresql+psycopg2://diariooficial_user:biByHJtxKIsNY3oXVq1z36MVYJRLJwqt@dpg-d2jlbja4d50c7386jnvg-a/diariooficial
+      DATABASE_URL: postgresql+psycopg2://postgres:Salvares$$$****@db:5432/diariooficial
     depends_on:
       - db
     ports:
-      - "4000:4000"
+      - "5000:5000"
     restart: always
 
 volumes:
